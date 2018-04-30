@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		650B9AB92095BF7D0091EC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9AB82095BF7D0091EC45 /* AppDelegate.swift */; };
-		650B9ABB2095BF7D0091EC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9ABA2095BF7D0091EC45 /* ViewController.swift */; };
 		650B9ABE2095BF7D0091EC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650B9ABC2095BF7D0091EC45 /* Main.storyboard */; };
 		650B9AC02095BF7D0091EC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650B9ABF2095BF7D0091EC45 /* Assets.xcassets */; };
 		650B9AC32095BF7D0091EC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650B9AC12095BF7D0091EC45 /* LaunchScreen.storyboard */; };
 		650B9ACE2095BF7E0091EC45 /* Couple_DaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9ACD2095BF7E0091EC45 /* Couple_DaysTests.swift */; };
 		650B9AD92095BF7E0091EC45 /* Couple_DaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9AD82095BF7E0091EC45 /* Couple_DaysUITests.swift */; };
+		650B9AE72095D2540091EC45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9AE62095D2540091EC45 /* HomeViewController.swift */; };
+		650B9AE92095F91B0091EC45 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9AE82095F91B0091EC45 /* Utilities.swift */; };
+		650B9AF1209602410091EC45 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B9AF0209602410091EC45 /* NotificationCenter.framework */; };
+		650B9AF4209602410091EC45 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9AF3209602410091EC45 /* TodayViewController.swift */; };
+		650B9AF7209602410091EC45 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650B9AF5209602410091EC45 /* MainInterface.storyboard */; };
+		650B9AFB209602410091EC45 /* Couple Days Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 650B9AEE209602410091EC45 /* Couple Days Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		650B9B012096084D0091EC45 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B9B002096084D0091EC45 /* Utilities.swift */; };
+		650B9B0520960C860091EC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650B9ABF2095BF7D0091EC45 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +38,32 @@
 			remoteGlobalIDString = 650B9AB42095BF7D0091EC45;
 			remoteInfo = "Couple Days";
 		};
+		650B9AF9209602410091EC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650B9AAD2095BF7D0091EC45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650B9AED209602410091EC45;
+			remoteInfo = "Coudple Days Widget";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		650B9AFF209602410091EC45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				650B9AFB209602410091EC45 /* Couple Days Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		650B9AB52095BF7D0091EC45 /* Couple Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Couple Days.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650B9AB82095BF7D0091EC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		650B9ABA2095BF7D0091EC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		650B9ABD2095BF7D0091EC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		650B9ABF2095BF7D0091EC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		650B9AC22095BF7D0091EC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,16 @@
 		650B9AD42095BF7E0091EC45 /* Couple DaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Couple DaysUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650B9AD82095BF7E0091EC45 /* Couple_DaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple_DaysUITests.swift; sourceTree = "<group>"; };
 		650B9ADA2095BF7E0091EC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650B9AE62095D2540091EC45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		650B9AE82095F91B0091EC45 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		650B9AEE209602410091EC45 /* Couple Days Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Couple Days Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650B9AF0209602410091EC45 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		650B9AF3209602410091EC45 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		650B9AF6209602410091EC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		650B9AF8209602410091EC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650B9B002096084D0091EC45 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		650B9B02209609140091EC45 /* Couple Days.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Couple Days.entitlements"; sourceTree = "<group>"; };
+		658634AE2097154700477D8F /* Couple Days Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Couple Days Widget.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650B9AEB209602410091EC45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B9AF1209602410091EC45 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +125,8 @@
 				650B9AB72095BF7D0091EC45 /* Couple Days */,
 				650B9ACC2095BF7E0091EC45 /* Couple DaysTests */,
 				650B9AD72095BF7E0091EC45 /* Couple DaysUITests */,
+				650B9AF2209602410091EC45 /* Couple Days Widget */,
+				650B9AEF209602410091EC45 /* Frameworks */,
 				650B9AB62095BF7D0091EC45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +137,7 @@
 				650B9AB52095BF7D0091EC45 /* Couple Days.app */,
 				650B9AC92095BF7E0091EC45 /* Couple DaysTests.xctest */,
 				650B9AD42095BF7E0091EC45 /* Couple DaysUITests.xctest */,
+				650B9AEE209602410091EC45 /* Couple Days Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +145,10 @@
 		650B9AB72095BF7D0091EC45 /* Couple Days */ = {
 			isa = PBXGroup;
 			children = (
+				650B9B02209609140091EC45 /* Couple Days.entitlements */,
 				650B9AB82095BF7D0091EC45 /* AppDelegate.swift */,
-				650B9ABA2095BF7D0091EC45 /* ViewController.swift */,
+				650B9AE82095F91B0091EC45 /* Utilities.swift */,
+				650B9AE62095D2540091EC45 /* HomeViewController.swift */,
 				650B9ABC2095BF7D0091EC45 /* Main.storyboard */,
 				650B9ABF2095BF7D0091EC45 /* Assets.xcassets */,
 				650B9AC12095BF7D0091EC45 /* LaunchScreen.storyboard */,
@@ -125,6 +175,26 @@
 			path = "Couple DaysUITests";
 			sourceTree = "<group>";
 		};
+		650B9AEF209602410091EC45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				650B9AF0209602410091EC45 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650B9AF2209602410091EC45 /* Couple Days Widget */ = {
+			isa = PBXGroup;
+			children = (
+				658634AE2097154700477D8F /* Couple Days Widget.entitlements */,
+				650B9B002096084D0091EC45 /* Utilities.swift */,
+				650B9AF3209602410091EC45 /* TodayViewController.swift */,
+				650B9AF5209602410091EC45 /* MainInterface.storyboard */,
+				650B9AF8209602410091EC45 /* Info.plist */,
+			);
+			path = "Couple Days Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +205,12 @@
 				650B9AB12095BF7D0091EC45 /* Sources */,
 				650B9AB22095BF7D0091EC45 /* Frameworks */,
 				650B9AB32095BF7D0091EC45 /* Resources */,
+				650B9AFF209602410091EC45 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				650B9AFA209602410091EC45 /* PBXTargetDependency */,
 			);
 			name = "Couple Days";
 			productName = "Couple Days";
@@ -181,6 +253,23 @@
 			productReference = 650B9AD42095BF7E0091EC45 /* Couple DaysUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		650B9AED209602410091EC45 /* Couple Days Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650B9AFC209602410091EC45 /* Build configuration list for PBXNativeTarget "Couple Days Widget" */;
+			buildPhases = (
+				650B9AEA209602410091EC45 /* Sources */,
+				650B9AEB209602410091EC45 /* Frameworks */,
+				650B9AEC209602410091EC45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Couple Days Widget";
+			productName = "Coudple Days Widget";
+			productReference = 650B9AEE209602410091EC45 /* Couple Days Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +283,11 @@
 					650B9AB42095BF7D0091EC45 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					650B9AC82095BF7E0091EC45 = {
 						CreatedOnToolsVersion = 9.2;
@@ -204,6 +298,15 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 650B9AB42095BF7D0091EC45;
+					};
+					650B9AED209602410091EC45 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -223,6 +326,7 @@
 				650B9AB42095BF7D0091EC45 /* Couple Days */,
 				650B9AC82095BF7E0091EC45 /* Couple DaysTests */,
 				650B9AD32095BF7E0091EC45 /* Couple DaysUITests */,
+				650B9AED209602410091EC45 /* Couple Days Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +356,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650B9AEC209602410091EC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B9B0520960C860091EC45 /* Assets.xcassets in Resources */,
+				650B9AF7209602410091EC45 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650B9ABB2095BF7D0091EC45 /* ViewController.swift in Sources */,
+				650B9AE92095F91B0091EC45 /* Utilities.swift in Sources */,
 				650B9AB92095BF7D0091EC45 /* AppDelegate.swift in Sources */,
+				650B9AE72095D2540091EC45 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +394,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650B9AEA209602410091EC45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B9B012096084D0091EC45 /* Utilities.swift in Sources */,
+				650B9AF4209602410091EC45 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +415,11 @@
 			isa = PBXTargetDependency;
 			target = 650B9AB42095BF7D0091EC45 /* Couple Days */;
 			targetProxy = 650B9AD52095BF7E0091EC45 /* PBXContainerItemProxy */;
+		};
+		650B9AFA209602410091EC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650B9AED209602410091EC45 /* Couple Days Widget */;
+			targetProxy = 650B9AF9209602410091EC45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +438,14 @@
 				650B9AC22095BF7D0091EC45 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		650B9AF5209602410091EC45 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650B9AF6209602410091EC45 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,6 +540,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GAQT92MSKF;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -414,8 +551,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -425,28 +563,40 @@
 		650B9ADE2095BF7E0091EC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Couple Days/Couple Days.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQT92MSKF;
 				INFOPLIST_FILE = "Couple Days/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcoding.Couple-Days";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		650B9ADF2095BF7E0091EC45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Couple Days/Couple Days.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQT92MSKF;
 				INFOPLIST_FILE = "Couple Days/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcoding.Couple-Days";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -512,6 +662,41 @@
 			};
 			name = Release;
 		};
+		650B9AFD209602410091EC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Couple Days Widget/Couple Days Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQT92MSKF;
+				INFOPLIST_FILE = "$(SRCROOT)/Couple Days Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcoding.Couple-Days.Coudple-Days-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		650B9AFE209602410091EC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Couple Days Widget/Couple Days Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQT92MSKF;
+				INFOPLIST_FILE = "$(SRCROOT)/Couple Days Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcoding.Couple-Days.Coudple-Days-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +732,15 @@
 			buildConfigurations = (
 				650B9AE42095BF7E0091EC45 /* Debug */,
 				650B9AE52095BF7E0091EC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650B9AFC209602410091EC45 /* Build configuration list for PBXNativeTarget "Couple Days Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650B9AFD209602410091EC45 /* Debug */,
+				650B9AFE209602410091EC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

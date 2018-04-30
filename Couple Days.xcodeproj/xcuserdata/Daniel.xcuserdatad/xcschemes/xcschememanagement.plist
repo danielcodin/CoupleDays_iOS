@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Couple Days Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Couple Days.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>650B9AB42095BF7D0091EC45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>650B9AC82095BF7E0091EC45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>650B9AD32095BF7E0091EC45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>650B9AED209602410091EC45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

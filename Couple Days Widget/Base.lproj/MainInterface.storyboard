@@ -35,7 +35,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaka_5" translatesAutoresizingMaskIntoConstraints="NO" id="Nju-vp-cXh" userLabel="kakaImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaka_dinosaur" translatesAutoresizingMaskIntoConstraints="NO" id="Nju-vp-cXh" userLabel="kakaImageView">
                                 <rect key="frame" x="15" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZyU-A1-GCF"/>
@@ -68,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="kaka_5" width="276" height="137"/>
+        <image name="kaka_dinosaur" width="325" height="324"/>
     </resources>
 </document>

@@ -76,37 +76,41 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     private func checkUpdateKakaImageView() -> Bool {
-        // get the time last changed the image
-        let lastMinutes = UserDefaultDataHelper.loadKeyToGroupApp("lastTimeChangedKakaImage") as? Int
-        if(lastMinutes == nil) {
+        // get the date last changed the image
+        let lastDate = UserDefaultDataHelper.loadKeyToGroupApp("KakaImageLastDate") as? Date
+        if(lastDate == nil) {
             // set first kakaImage
             kakaImageView.image = UIImage(named: "kaka_1")
             
             // save the current kakaImage index to userDefaults
             UserDefaultDataHelper.saveKeyToGroupApp(1 as AnyObject?, withKey: "kakaImageIndex")
             
-            // get current time minutes
-            let date = Date()
-            let calendar = Calendar.current
-            let minutes = calendar.component(.minute, from: date)
-            
-            // save the time last changed the image
-            UserDefaultDataHelper.saveKeyToGroupApp(minutes as AnyObject?, withKey: "lastTimeChangedKakaImage")
+            // save the date last changed the image
+            UserDefaultDataHelper.saveKeyToGroupApp(Date() as AnyObject?, withKey: "KakaImageLastDate")
             
             return false
         }
         
-        // get current time minutes
-        let date = Date()
+        // compute difference in days
+        let curDate = Date()
         let calendar = Calendar.current
-        let curMinutes = calendar.component(.minute, from: date)
+        let lastDate_noHour = calendar.startOfDay(for: lastDate!)
+        let curDate_noHour = calendar.startOfDay(for: curDate)
         
-        if(lastMinutes! < curMinutes && curMinutes-lastMinutes! >= 30) {
-            return true
-        } else if(lastMinutes! > curMinutes && 60+curMinutes-lastMinutes! >= 30) {
+        let components = calendar.dateComponents([.day], from: lastDate_noHour, to: curDate_noHour)
+        if(components.day! >= 1) {
             return true
         }
 
+        // get the current kakaImage index to userDefaults
+        var kakaImageIndex = UserDefaultDataHelper.loadKeyToGroupApp("kakaImageIndex") as? Int
+        if(kakaImageIndex == nil) {
+            kakaImageIndex = 0
+        }
+        
+        // update kakaImageView
+        kakaImageView.image = UIImage(named: "kaka_\(kakaImageIndex!)")
+        
         return false
     }
     
@@ -128,13 +132,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         // save the current kakaImage index to userDefaults
         UserDefaultDataHelper.saveKeyToGroupApp(kakaImageIndex as AnyObject?, withKey: "kakaImageIndex")
-
-        // get current time minutes
-        let date = Date()
-        let calendar = Calendar.current
-        let minutes = calendar.component(.minute, from: date)
         
-        // save the time last changed the image
-        UserDefaultDataHelper.saveKeyToGroupApp(minutes as AnyObject?, withKey: "lastTimeChangedKakaImage")
+        // save the date last changed the image
+        UserDefaultDataHelper.saveKeyToGroupApp(Date() as AnyObject?, withKey: "KakaImageLastDate")
     }
 }
